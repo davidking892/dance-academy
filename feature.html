@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+       <meta charset="utf-8">
+       <meta name="viewport" content="width=device-width,initial-scale=1">
+       <meta name="title" content="Dancing website" />
+       <meta http-equiv="x-ua-compatible" content="ie=edge">
+       <title>Let's Dance</title>
+       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+       <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.css">
+       <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.8/css/mdb.min.css" rel="stylesheet"> 
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css">
+       <style rel="stylesheet">
+ @import 'https://fonts.googleapis.com/css?family=Lora:400,400i,700|Raleway:300,600,700,900';
+html{
+  overflow-x: hidden;
+}
+body {
+  font-family: 'Lora', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+   color:#676767;
+  background: #fbfbfb;
+  cursor: default;
+ position: relative;
+  height:100%;
+  overflow-x: hidden; 
+ }
+ .blessing_container{
+ 	background: url("https://wallpaperbro.com/img/11031.jpg")center/cover fixed no-repeat;
+ }
+
+#landing{
+ height: 100vh;
+
+}
+.landing_page{
+	height:100%;
+    background:url("http://getwallpapers.com/wallpaper/full/0/2/4/681036.jpg") center/cover no-repeat fixed;
+	 color:#fff;
+}
+.footer-top{
+  background:linear-gradient(gray,black,blue);
+}
+.action{
+  border-radius:20px;
+  color:#6259B3;
+  font-style: 20px;
+  font-weight:600;
+}
+.footer-top{
+  color:#fff;
+}
+
+.dance_work{
+  background: url("https://wallpaperbro.com/img/11031.jpg")center/cover no-repeat fixed;
+  padding-top:10%;
+  color:#fff;
+}
+
+footer{
+	background: #04211C;
+}
+.seprator1{
+	width:100px;
+	height:1px;
+	background:gray;
+     position: relative;
+}
+.seprator1:after{
+	content:"";
+    position:absolute;
+    top:0;
+    left:0px;
+    bottom: 0;
+    width:50%;
+    height:3px;
+    background: #07FBD1;
+}
+
+.content div{
+	height:50px;
+}
+.content img{
+	height:100%;
+}
+.font-1{
+
+    font-style: italic;
+    font-size: 21px;
+}
+.holder-img{
+	height:25vh;
+	width:40vh;
+}
+.holder-img img{
+	height:100%;
+	width: 100%;
+	border-radius:50vh;
+}
+.hr-short{
+	width:50px;	
+}
+
+.modal-dialog{
+  position: relative;
+  top:10%;
+  
+}
+.modal-header{
+  width:20vh;
+  height:20vh;
+  position: absolute;
+  top:-15%;
+  left:50%;
+  transform: translateX(-50%);
+ 
+}
+.modal-header img{
+  width:100%;
+  height:100%;
+   border:3px solid #fff;
+  border-radius:50%;
+}
+.modal-body{
+  margin-top:14vh;
+}
+
+.navbar-nav li a.current,
+.navbar-nav li a:focus,
+.navbar-nav li a:hover {
+  background-color: transparent;
+  border-bottom: 1px solid #32B0EE;
+  color: #fff;
+}
+
+</style>
+</head>
+<body>
+
+
+
+<section id="landing">
+   <div class="view landing_page">
+   	   <div class="mask d-flex justify-content-center align-items-center">
+   	   	   <div class="container">
+   	   	   	   <div class="row">
+   	   	   	   	  <div class="col-md-7 text-center">
+   	   	   	   	  	  <h3 class="text-white">DANCING STAR ACADEMY</h3>
+   	   	   	   	  	  <hr class="bg-success my-4">
+   	   	   	   	  	  <p>
+                           <strong class="h5">FEEL HIGH, FEEL DANCE</strong>
+                      </p>
+   	   	   	   	  	  <p><img src="image/quote-sign-left.png" class="quote-sign-left mr-4" alt=""><span class="ml-5">
+                       Dance is not only a wonderful way to express yourself but also a fantastic spare time activity to enjoy. Dance will definitely boost your mood, helps you to forget everything around you.</span>
+                      </p>
+   	   	   	   	  </div>
+   	   	   	   </div>
+   	   	   </div>
+   	   </div>
+   </div>
+</section>
+
+  <nav id="header" data-wow-duration="500ms" class=" wow zoomIn navbar scrolling-navbar navbar-expand-md bg-dark navbar-dark ">
+              <div class="container-fluid">
+                  <a class="navbar-brand waves-effect " href="#">
+                      <strong class='blue-text' ><img src="image/logo.png"></strong>
+                  </a>
+                  <button type="button" class="navbar-toggler" data-target="#navbar_scroll" data-toggle="collapse" aria-  controls="navbarSupportedContent" aria-expanded="false" aria-  label="Toggle navigation" >
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div id="navbar_scroll" class="collapse navbar-collapse" style="overflow-y: hidden;">
+                    <ul class="navbar-nav ml-auto">
+                       <li class="nav-item active ">
+        <a class="nav-link waves-effect mx-2"  target="_self" href="index.html">Home  <span class="sr-only">(current)</span> </a>
+                </li>
+
+      <li class="nav-item">
+        <a class="nav-link waves-effect mx-2" target="_self" href="feature.html">Features</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link waves-effect mx-2" target="_self" href="work.html">Work</a>
+      </li> 
+
+      <li class="nav-item">
+        <a class="nav-link waves-effect mx-2" target="_self" href="blog.html">Blog</a>
+      </li> 
+
+      <li class="nav-item">
+        <a class="nav-link waves-effect mx-2" target="_self" href="contact.html">Contact</a>
+      </li> 
+</ul>
+          
+                  </div>
+              </div>
+         </nav>
+
+<main class="my-4">
+
+    <section class="my-5">
+    	  <div class="container">
+    	  	 
+            <div class="row">
+               <div class="text-center col-12">
+                 <h2>Features</h2>
+               </div>
+               <hr class="hr-mid">
+               <div class="sub-text text-center col-12">
+                     <p class="font-1">
+                        Dancing Star Academy is dedicated to teaching 'credible'<br>
+                        Western and Modern Indian dance forms
+                     </p>
+               </div>
+           </div>
+
+           <div class="row">
+                    <div class="col-lg-9 col-sm-12 col-md-9 col-xs-12 my-5">
+                     <div class="holder-para">
+                      <h3 class="my-4">CONTEMPORARY DANCE</h3>
+                     
+                      <p class="font-2">
+                            Contemporary Dance is a style of expressive dance form. It is a genre of dance performance that improves physical control, balance, coordination, alignment, strength, flexibility and stamina. 
+                            Reflecting the situation in society at large, contemporary dance is progressively integrating overtly technological elements and in particular Robotic.
+                      </p>
+                     </div>
+                    </div>
+                    <div class="col-lg-3 col-xs-12 col-sm-12 col-md-3 align-items-center d-flex">
+                            <div class="holder-img ">
+                              <img class=" img-fluid center-block" src="https://cdn.wallpapersafari.com/77/39/R94ZFo.jpg">
+                            </div>
+                    </div>
+                </div>
+                 <hr class="line-full">
+
+                  <div class="row">
+                  	<div class="col-lg-3 col-xs-12 col-sm-12 col-md-3 align-items-center d-flex">
+                            <div class="holder-img ">
+                              <img class=" img-fluid center-block" src="https://cdn.wallpapersafari.com/48/62/onAevf.jpg">
+                            </div>
+                    </div>
+
+                    <div class="col-lg-9 col-sm-12 col-md-9 col-xs-12 my-5">
+                     <div class="holder-para">
+                      <h3 class="my-4">SALSA</h3>
+                     
+                      <p class="font-2">
+                            Being a beautiful yet challenging form of dance, Salsa requires blend of physical synchronization and metal harmony between two partners so as to achieve the desired results of good chemistry and great achievements.
+                            Salsa generally uses music ranging from about 150 bpm ( beats per minute) to around 250 bpm, it may vary from 160- 220 bpm.
+                      </p>
+                     </div>
+                    </div>
+                    
+                </div>
+                 <hr class="line-full">
+
+                  <div class="row">
+                    <div class="col-lg-9 col-sm-12 col-md-9 col-xs-12 my-5">
+                     <div class="holder-para">
+                      <h3 class="my-4">HIP HOP</h3>
+                     
+                      <p class="font-2">
+                            Hip Hop Dance represents the freedom to learn, grow and evolve.
+                            Hip- Hop Culture is the expression of four elements: Breaking, Rapping, Graphite and Djing.
+                            What distinguishes Hip- Hop from other dance forms is that it is often “freestyle” in nature and it crews often employ in freestyle dance competitions- vernacularly referred to as “battles”. Hip Hop dance can be a form of enjoyment or an avocation.
+                      </p>
+                     </div>
+                    </div>
+                    <div class="col-lg-3 col-xs-12 col-sm-12 col-md-3 align-items-center d-flex">
+                            <div class="holder-img ">
+                              <img class=" img-fluid center-block" src="https://cdn.wallpapersafari.com/95/82/CtRTla.jpg">
+                            </div>
+                    </div>
+                </div>
+                 <hr class="line-full">
+
+                  <div class="row">
+                  	  <div class="col-lg-3 col-xs-12 col-sm-12 col-md-3 align-items-center d-flex">
+                            <div class="holder-img ">
+                              <img class=" img-fluid center-block" src="https://cdn.wallpapersafari.com/45/44/GaHBEw.jpg">
+                            </div>
+                    </div>
+                    <div class="col-lg-9 col-sm-12 col-md-9 col-xs-12 my-5">
+                     <div class="holder-para">
+                      <h3 class="my-4">ZUMBA</h3>
+                     
+                      <p class="font-2">
+                            Zumba is a Latin inspired dance workout. Its all about grooving to the beats of Salsa, flamenco, and merengue music feels more like a dance party than a workout.
+                            “Ditch the Workout, and Join the Party” is our tag line for Zumba Classes.
+                            Zumba is an interval workout and helps to burn on an average 369 calories- more than cardio kicking boxing or step aerobics. 
+                      </p>
+                     </div>
+                    </div>
+                  
+                </div>
+                 <hr class="line-full">
+
+                  <div class="row">
+                    <div class="col-lg-9 col-sm-12 col-md-9 col-xs-12 my-5">
+                     <div class="holder-para">
+                      <h3 class="my-4">BOLLYWOOD</h3>
+                     
+                      <p class="font-2">
+                            It is a dance form that has spread itself equally among an ever growing population of above a billion people separated by the diversities of region, religion, castes, languages and many other cultural differences.
+                            Currently it is influenced by Western Culture, its evolution is a process that is entirely Indian and yet cross- cultural at the same time. 
+                      </p>
+                     </div>
+                    </div>
+                    <div class="col-lg-3 col-xs-12 col-sm-12 col-md-3 align-items-center d-flex">
+                            <div class="holder-img ">
+                              <img class=" img-fluid center-block" src="https://cdn.wallpapersafari.com/40/84/7J6peq.jpg">
+                            </div>
+                    </div>
+                </div>
+                 <hr class="line-full">
+
+                  <div class="row">
+                  	 <div class="col-lg-3 col-xs-12 col-sm-12 col-md-3 align-items-center d-flex">
+                            <div class="holder-img ">
+                              <img class=" img-fluid center-block" src="https://cdn.wallpapersafari.com/2/10/JSjcv5.jpg">
+                            </div>
+                    </div>
+                    <div class="col-lg-9 col-sm-12 col-md-9 col-xs-12 my-5">
+                     <div class="holder-para">
+                      <h3 class="my-4">BREAK DANCE</h3>
+                     
+                      <p class="font-2">
+                            Break Dance also known as B- Boying/ B- Girling or BreakDancing is an athletic style of street dance. It is an energetic form of dance that includes stylized footwork and athletic moves such as spinning on the knees, hands or head.
+                            It is a dynamic style of dance and one of the major elements of Hip- Hop culture.
+                      </p>
+                     </div>
+                    </div>
+                   
+                </div>
+                <hr class="line-full">
+
+                  <div class="row">
+                    <div class="col-lg-9 col-sm-12 col-md-9 col-xs-12 my-5">
+                     <div class="holder-para">
+                      <h3 class="my-4">ROBOTICS</h3>
+                     
+                      <p class="font-2">
+                            Robotics Dance Style as the name suggests dancing like a Robot. In this dance form, the dancer moves their limbs in a way that imitates the movements of a Robot. It is also considered a subsection of popping.
+                            Movements of the Robot are normally started and finished with dimestop to give the impression of motors starting and stopping.
+                      </p>
+                     </div>
+                    </div>
+                    <div class="col-lg-3 col-xs-12 col-sm-12 col-md-3 align-items-center d-flex">
+                            <div class="holder-img ">
+                              <img class=" img-fluid center-block" src="https://cdn.wallpapersafari.com/95/82/CtRTla.jpg">
+                            </div>
+                    </div>
+                </div>
+                 <hr class="line-full">
+
+                  <div class="row">
+                      <div class="col-lg-3 col-xs-12 col-sm-12 col-md-3 align-items-center d-flex">
+                            <div class="holder-img ">
+                              <img class=" img-fluid center-block" src="https://cdn.wallpapersafari.com/45/44/GaHBEw.jpg">
+                            </div>
+                    </div>
+                    <div class="col-lg-9 col-sm-12 col-md-9 col-xs-12 my-5">
+                     <div class="holder-para">
+                      <h3 class="my-4">LYRICAL</h3>
+                     
+                      <p class="font-2">
+                            Lyrical Dance is a fusion of Ballet and Jazz Dance. It is oriented towards the dancer’s emotional responses rather than to an underlying formal choreographic structure.
+                            This dance style concentrates on an individual approach and expressiveness of emotions of love, joy and anger.
+                      </p>
+                     </div>
+                    </div>
+                  
+                </div>
+                 <hr class="line-full">
+
+                  <div class="row">
+                    <div class="col-lg-9 col-sm-12 col-md-9 col-xs-12 my-5">
+                     <div class="holder-para">
+                      <h3 class="my-4">CLASSICAL</h3>
+                     
+                      <p class="font-2">
+                            Indian Classical Dance or Shastriya Nritya is a term for various perfrmance arts rooted I religious Hindu Culture.Unlike folk dances, Classical Dance is all about technicalities and strict rules. In Classical dance ‘mudras’ or signs of hands are used for common language of expression.
+                            World famous Indian Classical forms that are originated and evolved in India are Bharatnatyam, Kathak, Kathakali, Kuchipudi, Manipuri, Mohiniattam and Odissi.
+                      </p>
+                     </div>
+                    </div>
+                    <div class="col-lg-3 col-xs-12 col-sm-12 col-md-3 align-items-center d-flex">
+                            <div class="holder-img ">
+                              <img class=" img-fluid center-block" src="https://cdn.wallpapersafari.com/40/84/7J6peq.jpg">
+                            </div>
+                    </div>
+                </div>
+                 <hr class="line-full">
+
+    	  </div>
+    </section>
+
+	 <section class="mt-2 blessing_container">
+	 	 <div class="row my-5">
+	 	 	 <div class="col-md-6"></div>
+	 	 	  <div class="col-md-6"></div>
+	 	 </div>
+	 </section>
+
+	 <section class="mt-4 dance_work">
+  <div class="container">
+     <div class="row ">
+         <div class="col-12 text-center my-4 px-5">
+             <h2>IMPRESSED? LET’S DANCE TOGETHER</h2>
+             <p class="lead">Dance lessons are a great way to reduce your stress. When you’re learning a skill like dance, you need to be completely engaged and present in the moment. 
+
+            </p>
+            <a href="contact.html" target='' class="btn btn-lg btn-outline-white text-uppercase">Hire Us</a>
+         </div>
+     </div>
+   </div>
+ </section>
+
+	 <section class="mt-3 ">
+       <div class="row footer-top py-4">
+          <div class="col-md-8  d-flex justify-content-center ">
+            <div class="footer-top-content px-4 my-2">
+             <h4 class="wow fadeInUp" data-wow-delay="0.3s">BOOK YOUR ONLINE APPOINTMENT</h4>
+             <p class="lead wow fadeInDown" data-wow-delay="0.6s">For Online Registration click on Action Button.</p>
+           </div>
+          </div>
+            <div class="col-md-4  text-center">
+               <button id="createAccount" class="btn btn-lg action bg-white wow fadeInLeft" data-wow-delay="0.3s">Go to Action Button</button>
+          </div>
+       </div>
+   </section>
+</main>
+
+<footer>
+	<div class="container my-2">
+		 <div class="row py-5">
+		 	 <div class="col-md-4 ">
+		 	 	<h2>CONTACT</h2>
+		 	 	<div class="seprator1"></div>
+		 	 	<div class="content mt-3 text-white">
+		 	 		 <p> guptarakhi995@gmail.com</p>
+		 	 		  <p> 8130455924</p>
+		 	 		   <p> Shop No.- 357 New Bhoor Colony</p>
+		 	 		    <p>  Opposite Sec 29</p>
+              <p>  Near Rama Sweets, Faridabad</p>
+		 	 	</div>
+		 	 </div>
+		 	 <div class="col-md-4 ">
+		 	 	<h2>LATEST NEWS</h2>
+		 	 	<div class="seprator1"></div>
+		 	 	<div class="content row">
+		 	 		<div class="col-3 mt-4">
+		 	 			<img class="img-fluid" src="https://images.unsplash.com/photo-1502132878278-fc497750f27a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60">
+		 	 		</div>
+		 	 		<div class="col-3 mt-4">
+		 	 			<img class="img-fluid" src="https://images.unsplash.com/photo-1519925610903-381054cc2a1c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60">
+		 	 		</div>
+		 	 		<div class="col-3 mt-4">
+		 	 			<img class="img-fluid" src="https://images.unsplash.com/photo-1511715282680-fbf93a50e721?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60">
+		 	 		</div>
+		 	 		<div class="col-3 mt-4">
+		 	 			<img class="img-fluid" src="https://images.unsplash.com/photo-1463592177119-bab2a00f3ccb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60">
+		 	 		</div>
+		 	 		<div class="col-3 mt-4">
+		 	 			<img class="img-fluid" src="https://images.unsplash.com/photo-1479812627010-aa5bd9d173b1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60">
+		 	 		</div>
+		 	 		<div class="col-3 mt-4">
+		 	 			<img class="img-fluid" src="https://images.unsplash.com/photo-1479813183133-f2e9b38ed6c4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60">
+		 	 		</div>
+		 	 		<div class="col-3 mt-4">
+		 	 			<img class="img-fluid" src="https://images.unsplash.com/photo-1455072414764-a3fb958b8415?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60">
+		 	 		</div>
+		 	 	</div>
+		 	 </div>
+		 	 <div class="col-md-4 ">
+		 	 	<h2>Dancing Star Academy </h2>
+		 	 	<div class="seprator1"></div>
+		 	 	<div class="content mt-3 text-white">
+		 	 		<p>Your dancer will be nourished and cheered to develop their confidence, self belief and the love of dance.</p>
+		 	 		<p> We Aim to provide quality dance training and making dance available to all.</p>
+		 	 </div>
+		 </div>
+	</div>
+</footer>
+
+     <div class="container">
+         <div class="row">
+             <div class="col-md-6">
+                 <div class="card">
+                     <section>
+                         <div role="dialog" class="modal fade login">
+                             <div class="modal-dialog modal-sm">
+                                  <div class="modal-content">
+                                      <div class="modal-header">
+                                         <img class="img-fluid " src="https://images.unsplash.com/photo-1509670811615-bb8b07cb3caf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60">
+                                      </div>
+                                      <div class="modal-body text-center">
+                                           <p class="mt-1 mb-2">Please fill Details</p>
+                                            <div class="md-form mx-0 ">
+                        <input  type="text" id="form1" class="form-control ">
+                        <label for="form1" class="ml-0">Full name</label>
+                        </div>
+
+                        <div class="md-form mx-auto">
+                            <input type="text" id="form2" class="form-control">
+                            <label for="form2">Email Id</label>
+                            </div>
+                       
+                          <div class="md-form mx-auto">
+                            <input type="text" id="form3" class="form-control">
+                            <label for="form3">Address</label>
+                            </div>
+                        </div>
+
+                      <div class="text-center my-2">
+                        <button class="btn btn-cyan">Submit
+                          <i class="fas fa-sign-in-alt ml-1"></i>
+                        </button>
+                                      </div>
+                                  </div>
+                             </div>
+                         </div> 
+                     </section>
+                 </div>
+             </div>
+         </div>
+     </div>
+
+
+
+        <!-- javascript project -->
+       
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.8/js/mdb.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.scrollex/0.2.1/jquery.scrollex.min.js"></script>
+<script type="text/javascript">
+    new WOW().init();
+
+    $("#createAccount").on("click",function(event){
+        event.preventDefault();
+          $(".login").modal("show");
+    });
+
+   
+
+  </script>
+
+    </body>
+</html>

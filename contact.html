@@ -1,0 +1,470 @@
+
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+       <meta charset="utf-8">
+       <meta name="viewport" content="width=device-width,initial-scale=1">
+       <meta name="title" content="Dancing website" />
+       <meta http-equiv="x-ua-compatible" content="ie=edge">
+       <title>Let's Dance</title>
+       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+       <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.css">
+       <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.8/css/mdb.min.css" rel="stylesheet"> 
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css">
+       <style rel="stylesheet">
+ @import 'https://fonts.googleapis.com/css?family=Lora:400,400i,700|Raleway:300,600,700,900';
+
+body {
+  font-family: 'Lora', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+   color:#676767;
+  background: #fbfbfb;
+  cursor: default;
+ position: relative;
+  height:100%;
+  overflow-x: hidden; 
+ }
+
+
+#landing{
+ height: 100vh;
+
+}
+.landing_page{
+	height:100%;
+    background:url("http://getwallpapers.com/wallpaper/full/d/5/e/681049.jpg") center/cover no-repeat fixed;
+	 color:#fff;
+}
+.footer-top{
+  background:linear-gradient(gray,black,blue);
+}
+.action{
+  border-radius:20px;
+  color:#6259B3;
+  font-style: 20px;
+  font-weight:600;
+}
+.footer-top{
+  color:#fff;
+}
+
+.dance_work{
+  background: url("https://wallpaperbro.com/img/11031.jpg")center/cover no-repeat fixed;
+  padding-top:10%;
+  color:#fff;
+}
+
+footer{
+	background: #04211C;
+}
+.seprator1{
+	width:100px;
+	height:1px;
+	background:gray;
+     position: relative;
+}
+.seprator1:after{
+	content:"";
+    position:absolute;
+    top:0;
+    left:0px;
+    bottom: 0;
+    width:50%;
+    height:3px;
+    background: #07FBD1;
+}
+
+.content div{
+	height:50px;
+}
+.content img{
+	height:100%;
+}
+.bg-cover{
+	background-size: cover;
+	background-position: center;
+	padding:5%;
+}
+.input-group-addon{
+	background: #120EFA;
+	border-top-right-radius:50px; 
+	border-bottom-right-radius:50px; 
+	color:#fff;
+	padding:0 10px;
+}
+.input-group input[type="email"]{
+	outline: none;
+	box-shadow: none;
+}
+.contact{
+	padding:5% 0;
+	background: radial-gradient(#B8F988,#DAD9FC);
+}
+#inner_btn{
+  border:1px solid rgba(10, 180, 180, 1);
+  background: rgba(20, 20, 20, .6);
+  font-size:18px;
+  color:#fff;
+   padding: 10px 50px;
+  cursor: pointer;
+  transition: .4s;
+}
+#inner_btn:hover{
+   background: rgba(20, 20, 20, .8);
+    padding: 10px 80px;
+}
+ .form-control:focus {
+        border-color: transparent;
+        outline: none;
+        box-shadow: none;
+       
+    }
+
+    .navbar-nav li a.current,
+.navbar-nav li a:focus,
+.navbar-nav li a:hover {
+  background-color: transparent;
+  border-bottom: 1px solid #32B0EE;
+  color: #fff;
+}
+
+.modal-dialog{
+  position: relative;
+  top:10%;
+  
+}
+.modal-header{
+  width:20vh;
+  height:20vh;
+  position: absolute;
+  top:-15%;
+  left:50%;
+  transform: translateX(-50%);
+ 
+}
+.modal-header img{
+  width:100%;
+  height:100%;
+   border:3px solid #fff;
+  border-radius:50%;
+}
+.modal-body{
+  margin-top:14vh;
+}
+
+</style>
+</head>
+<body>
+
+
+<section id="landing">
+   <div class="view landing_page">
+   	   <div class="mask d-flex justify-content-center align-items-center">
+   	   	   <div class="container">
+   	   	   	   <div class="row">
+   	   	   	   	  <div class="col-md-7 text-center">
+   	   	   	   	  	  <h3 class="text-white">PROPERTY SEARCHING JUST GOT SO EASY</h3>
+   	   	   	   	  	  <hr class="bg-success my-4">
+   	   	   	   	  	  <p>
+                           <strong class="h5">Best & free guide of responsive web design</strong>
+                      </p>
+   	   	   	   	  	  <p><img src="image/quote-sign-left.png" class="quote-sign-left mr-4" alt=""><span class="ml-5">
+                       Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.</span>
+                      </p>
+   	   	   	   	  </div>
+   	   	   	   </div>
+   	   	   </div>
+   	   </div>
+   </div>
+</section>
+
+<nav id="header" data-wow-duration="500ms" class=" wow zoomIn navbar scrolling-navbar navbar-expand-md bg-dark navbar-dark ">
+              <div class="container-fluid">
+                  <a class="navbar-brand waves-effect " href="#">
+                      <strong class='blue-text' ><img src="image/logo.png"></strong>
+                  </a>
+                  <button type="button" class="navbar-toggler" data-target="#navbar_scroll" data-toggle="collapse" aria-  controls="navbarSupportedContent" aria-expanded="false" aria-  label="Toggle navigation" >
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div id="navbar_scroll" class="collapse navbar-collapse" style="overflow-y: hidden;">
+                    <ul class="navbar-nav ml-auto">
+                       <li class="nav-item active ">
+        <a class="nav-link waves-effect mx-2"  target="_self" href="index.html">Home  <span class="sr-only">(current)</span> </a>
+                </li>
+
+      <li class="nav-item">
+        <a class="nav-link waves-effect mx-2" target="_self" href="feature.html">Features</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link waves-effect mx-2" target="_self" href="work.html">Work</a>
+      </li> 
+
+      <li class="nav-item">
+        <a class="nav-link waves-effect mx-2" target="_self" href="blog.html">Blog</a>
+      </li> 
+
+      <li class="nav-item">
+        <a class="nav-link waves-effect mx-2" target="_self" href="contact.html">Contact</a>
+      </li> 
+</ul>
+          
+                  </div>
+              </div>
+         </nav>
+
+
+<main class="my-4">
+
+
+	<div class="contact" id="contact">
+    <div class="contact_bg">
+      <div class="container">
+          <div class="row my-3">
+              <h2>Contact Me<i class="fas fa-paper-plane ml-2"></i></h2>              
+          </div>
+          <div class="row">
+             <div class="col-md-12 wow zoomIn">
+                 <form id="contact-form" name="contact_Form" role="form">
+                      <div class="message"></div>
+                      <div class="controls py-5 text-center">
+                          <div class="row">
+                              <div class="col-md-6 my-2">
+                                  <input  id="name" type="text" name="firstname" class="form-control" placeholder="Please enter first name *" required="required">
+                              </div>
+                              <div class="col-md-6 my-2">
+                                  <input id="lastname" type="text" name="lastname" class="form-control" placeholder="Please enter LastName *" required="required">
+                              </div>
+                          </div>
+                          <div class="row mt-3">
+                             <div class="col-md-6 my-2">
+                                <input id="email" type="email" name="email" class="form-control" placeholder="Please enter email *" required="required">
+                             </div>
+                              <div class="col-md-6 my-2">
+                                <input id="phone" type="text" name="phone" class="form-control" placeholder="Please enter phone *" required="required">
+                             </div>
+                          </div>
+                          <div class="row mt-3">
+                              <div class="col-md-12">
+                                 <textarea id="message" name="message" rows="4" class="form-control" required="required" placeholder="Message for us" ></textarea>
+                              </div>
+                          </div>
+                          
+                  <div id="contact_btn" class="mt-4">
+              <input type="submit" id="inner_btn" name="submit" value="Send">
+               </div>
+                      </div>
+                 </form>
+             </div>
+          </div>
+      </div>
+    </div>
+ </div>
+
+	 <section class="mt-2 blessing_container container">
+	 		 	 <div class="row my-5">
+	 	 	 <div class="col-md-3">
+	 	 	 	<h2>EVENT LOCATION</h2>
+        <p> DANCING STAR ACADEMY</p>
+	 	 	 	<p> Shop No.- 357 New Bhoor Colony</p>
+              <p>  Opposite Sec 29</p>
+              <p>  Near Rama Sweets, Faridabad</p>
+	 	 	 	<p>Phone:  8130455924</p>
+	 	 	 	<p>Email: guptarakhi995@gmail.com</p>
+	 	 	 </div>
+	 	 	  <div class="col-md-9">
+	 	 	  	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d56136.19331397456!2d77.28737183887124!3d28.433975897160032!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cdd9a3e2710bf%3A0x3fa24d33b1f778a7!2sSector%2029%2C%20Faridabad%2C%20Haryana!5e0!3m2!1sen!2sin!4v1568218238545!5m2!1sen!2sin" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+	 	 	  </div>
+	 	 </div>
+	 </section>
+
+	 <section id="contact" class="section section-subscribe bg--position-center no-repeat bg-cover" style="background-image:url('https://cdn.wallpapersafari.com/28/13/zKpwv0.jpg')">
+      <div class="container">
+        <div class="row d-flex justify-content-center">
+          <div class="col-md-8 col-md-offset-2 ">
+            <div class="subscribe-card bg--position-center no-repeat bg-cover" style="background-image:url(image/mail.png)">
+              <header class="my-4">
+                <h3 class="text-center "><span class="text--semi-bold">Subscribe to </span> <span class="text--light">Our Newsletter</span></h3>
+              </header>
+              <div class="subscription-form">
+                <form>
+                  <div class="form-group d-flex justify-content-center">
+                    <label class="sr-only" for="exampleInputAmount">Amount (in dollars)</label>
+                    <div class="input-group w-75">
+                      <input type="email" class="form-control email_container " id="exampleInputAmount" placeholder="Email">
+                      <div class="input-group-addon subscribe-addons d-flex justify-content-center align-items-center "><span>subscribe</span></div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+	 <section class="mt-3 ">
+       <div class="row footer-top py-4">
+          <div class="col-md-8  d-flex justify-content-center ">
+            <div class="footer-top-content px-4 my-2">
+             <h4 class="wow fadeInUp" data-wow-delay="0.3s">BOOK YOUR ONLINE APPOINTMENT</h4>
+             <p class="lead wow fadeInDown" data-wow-delay="0.6s">Call to action button example for booking appointment for patients.</p>
+           </div>
+          </div>
+            <div class="col-md-4  text-center">
+               <button id="createAccount" class="btn btn-lg action bg-white wow fadeInLeft" data-wow-delay="0.3s">Go to Action Button</button>
+          </div>
+       </div>
+   </section>
+</main>
+
+<footer>
+	<div class="container my-2">
+		 <div class="row py-5">
+		 	 <div class="col-md-4 ">
+		 	 	<h2>CONTACT</h2>
+		 	 	<div class="seprator1"></div>
+		 	 	<div class="content mt-3 text-white">
+		 	 		 <p> guptarakhi995@gmail.com</p>
+		 	 		  <p> 8130455924</p>
+		 	 		   <p> Shop No.- 357 New Bhoor Colony</p>
+              <p>  Opposite Sec 29</p>
+              <p>  Near Rama Sweets, Faridabad</p>
+		 	 	</div>
+		 	 </div>
+		 	 <div class="col-md-4 ">
+		 	 	<h2>LATEST NEWS</h2>
+		 	 	<div class="seprator1"></div>
+		 	 	<div class="content row">
+		 	 		<div class="col-3 mt-4">
+		 	 			<img class="img-fluid" src="https://images.unsplash.com/photo-1502132878278-fc497750f27a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60">
+		 	 		</div>
+		 	 		<div class="col-3 mt-4">
+		 	 			<img class="img-fluid" src="https://images.unsplash.com/photo-1519925610903-381054cc2a1c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60">
+		 	 		</div>
+		 	 		<div class="col-3 mt-4">
+		 	 			<img class="img-fluid" src="https://images.unsplash.com/photo-1511715282680-fbf93a50e721?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60">
+		 	 		</div>
+		 	 		<div class="col-3 mt-4">
+		 	 			<img class="img-fluid" src="https://images.unsplash.com/photo-1463592177119-bab2a00f3ccb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60">
+		 	 		</div>
+		 	 		<div class="col-3 mt-4">
+		 	 			<img class="img-fluid" src="https://images.unsplash.com/photo-1479812627010-aa5bd9d173b1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60">
+		 	 		</div>
+		 	 		<div class="col-3 mt-4">
+		 	 			<img class="img-fluid" src="https://images.unsplash.com/photo-1479813183133-f2e9b38ed6c4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60">
+		 	 		</div>
+		 	 		<div class="col-3 mt-4">
+		 	 			<img class="img-fluid" src="https://images.unsplash.com/photo-1455072414764-a3fb958b8415?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60">
+		 	 		</div>
+		 	 	</div>
+		 	 </div>
+		 	 <div class="col-md-4 ">
+		 	 	<h2>Dancing Academy </h2>
+		 	 	<div class="seprator1"></div>
+		 	 	<div class="content mt-3 text-white">
+		 	 		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut in egestas lectus. Etiam tempor odio tellus, at bibendum neque faucibus quis. Sed vel facilisis elit.</p>
+		 	 		<p>Nullam fringilla pharetra diam non accumsan. Morbi eget aliquam mauris. Etiam vehicula efficitur mi.</p>
+		 	 	</div>
+		 	 </div>
+		 </div>
+	</div>
+</footer>
+
+ <div class="container">
+         <div class="row">
+             <div class="col-md-6">
+                 <div class="card">
+                     <section>
+                         <div role="dialog" class="modal fade login">
+                             <div class="modal-dialog modal-sm">
+                                  <div class="modal-content">
+                                      <div class="modal-header">
+                                         <img class="img-fluid " src="https://images.unsplash.com/photo-1509670811615-bb8b07cb3caf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60">
+                                      </div>
+                                      <div class="modal-body text-center">
+                                           <p class="mt-1 mb-2">Please fill Details</p>
+                                            <div class="md-form mx-0 ">
+                        <input  type="text" id="form1" class="form-control ">
+                        <label for="form1" class="ml-0">Full name</label>
+                        </div>
+
+                        <div class="md-form mx-auto">
+                            <input type="text" id="form2" class="form-control">
+                            <label for="form2">Email Id</label>
+                            </div>
+                       
+                          <div class="md-form mx-auto">
+                            <input type="text" id="form3" class="form-control">
+                            <label for="form3">Address</label>
+                            </div>
+                        </div>
+
+                      <div class="text-center my-2">
+                        <button class="btn btn-cyan">Submit
+                          <i class="fas fa-sign-in-alt ml-1"></i>
+                        </button>
+                                      </div>
+                                  </div>
+                             </div>
+                         </div> 
+                     </section>
+                 </div>
+             </div>
+         </div>
+     </div>
+
+
+
+        <!-- javascript project -->
+       
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.8/js/mdb.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+<script type="text/javascript">
+    new WOW().init();
+
+     $("#createAccount").on("click",function(event){
+        event.preventDefault();
+          $(".login").modal("show");
+    });
+
+    $(".input-group-addon").on('click',function(event){
+    	event.preventDefault();
+    	var email_id=$(".email_container").val();
+    	
+    	if(isEmailValid(email_id)){
+
+    	$.ajax({
+    		url:"php/main.php",
+    		data:{id:email_id},
+    		type:"post",
+    		success:function(data){
+    			alert(data);
+    		}
+    	});
+    }
+    else{
+    	alert("please fill email correctly");
+    }
+    });
+
+   
+
+    function isEmailValid(email){
+
+     var regix=/^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9])+\.)+([a-zA-Z0-9]{2,4})+$/;
+     return regix.test(email);
+
+    }
+
+  </script>
+
+    </body>
+</html>

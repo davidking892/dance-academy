@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+       <meta charset="utf-8">
+       <meta name="viewport" content="width=device-width,initial-scale=1">
+       <meta name="title" content="Dancing website" />
+       <meta http-equiv="x-ua-compatible" content="ie=edge">
+       <title>Let's Dance</title>
+       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+       <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.css">
+       <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.8/css/mdb.min.css" rel="stylesheet"> 
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css">
+       <style rel="stylesheet">
+ @import 'https://fonts.googleapis.com/css?family=Lora:400,400i,700|Raleway:300,600,700,900';
+
+body {
+  font-family: 'Lora', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+   color:#676767;
+  background: #fbfbfb;
+  cursor: default;
+ position: relative;
+  height:100%;
+  overflow-x: hidden; 
+ }
+ .blessing_container{
+ 	background: url("https://wallpaperbro.com/img/11031.jpg")center/cover fixed no-repeat;
+ }
+
+#landing{
+ height: 100vh;
+
+}
+.landing_page{
+	height:100%;
+    background:url("https://cdn.wallpapersafari.com/1/19/Qm4W12.jpeg") center/cover no-repeat fixed;
+	 color:#fff;
+}
+.footer-top{
+  background:linear-gradient(gray,black,blue);
+}
+.action{
+  border-radius:20px;
+  color:#6259B3;
+  font-style: 20px;
+  font-weight:600;
+}
+.footer-top{
+  color:#fff;
+}
+
+.dance_work{
+  background: url("https://wallpaperbro.com/img/11031.jpg")center/cover no-repeat fixed;
+  padding-top:10%;
+  color:#fff;
+}
+
+footer{
+	background: #04211C;
+}
+.seprator1{
+	width:100px;
+	height:1px;
+	background:gray;
+     position: relative;
+}
+.seprator1:after{
+	content:"";
+    position:absolute;
+    top:0;
+    left:0px;
+    bottom: 0;
+    width:50%;
+    height:3px;
+    background: #07FBD1;
+}
+
+.content div{
+	height:50px;
+}
+.content img{
+	height:100%;
+}
+.owl-carousel .owl-dots .owl-dot span{
+	background-color: #F0ECE7;
+	margin: 5px;
+}
+
+.owl-theme .owl-controls .owl-page.active span,
+.owl-theme .owl-controls.clickable .owl-page:hover span{
+  background: #07FBD1;
+}
+.img_cont{
+	height:30vh;
+}
+.img_cont img{
+	height: 100%;
+	width: 100%;
+}
+.work_main1{
+	height:30vh;
+}
+.work_main1 img{
+	height:100%;
+	width: 100%;
+}
+.schedule-box{
+	background: #000;
+	padding: 50px 0;
+    margin: 25px 0 0;
+    color:#fff;
+    position: relative;
+}
+.schedule-box:after{
+	 position: absolute;
+	 content:"";
+	top: 5px;
+  right: 5px;
+  bottom: 5px;
+  left: 5px;
+  border: 1px solid #fff;
+}
+.navbar-nav li a.current,
+.navbar-nav li a:focus,
+.navbar-nav li a:hover {
+  background-color: transparent;
+  border-bottom: 1px solid #32B0EE;
+  color: #fff;
+}
+
+.modal-dialog{
+  position: relative;
+  top:10%;
+  
+}
+.modal-header{
+  width:20vh;
+  height:20vh;
+  position: absolute;
+  top:-15%;
+  left:50%;
+  transform: translateX(-50%);
+ 
+}
+.modal-header img{
+  width:100%;
+  height:100%;
+   border:3px solid #fff;
+  border-radius:50%;
+}
+.modal-body{
+  margin-top:14vh;
+}
+
+</style>
+</head>
+<body>
+
+
+<section id="landing">
+   <div class="view landing_page">
+   	   <div class="mask d-flex justify-content-center align-items-center">
+   	   	   <div class="container">
+   	   	   	   <div class="row">
+   	   	   	   	  <div class="col-md-7 text-center">
+   	   	   	   	  	  <h3 class="text-white">DANCING STAR ACADEMY</h3>
+   	   	   	   	  	  <hr class="bg-success my-4">
+   	   	   	   	  	  <p>
+                           <strong class="h5">Feel High, Feel Dance</strong>
+                      </p>
+   	   	   	   	  	  <p><img src="image/quote-sign-left.png" class="quote-sign-left mr-4" alt=""><span class="ml-5">
+                       Dance, when you’re broken open. Dance, if you’ve torn the bandage off. Dance in the middle of the fighting. Dance when you’re perfectly free.</span>
+                      </p>
+   	   	   	   	  </div>
+   	   	   	   </div>
+   	   	   </div>
+   	   </div>
+   </div>
+</section>
+
+<nav id="header" data-wow-duration="500ms" class=" wow zoomIn navbar scrolling-navbar navbar-expand-md bg-dark navbar-dark ">
+              <div class="container-fluid">
+                  <a class="navbar-brand waves-effect " href="#">
+                      <strong class='blue-text' ><img src="image/logo.png"></strong>
+                  </a>
+                  <button type="button" class="navbar-toggler" data-target="#navbar_scroll" data-toggle="collapse" aria-  controls="navbarSupportedContent" aria-expanded="false" aria-  label="Toggle navigation" >
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div id="navbar_scroll" class="collapse navbar-collapse" style="overflow-y: hidden;">
+                    <ul class="navbar-nav ml-auto">
+                       <li class="nav-item active ">
+        <a class="nav-link waves-effect mx-2"  target="_self" href="index.html">Home  <span class="sr-only">(current)</span> </a>
+                </li>
+
+      <li class="nav-item">
+        <a class="nav-link waves-effect mx-2" target="_self" href="feature.html">Features</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link waves-effect mx-2" target="_self" href="work.html">Work</a>
+      </li> 
+
+      <li class="nav-item">
+        <a class="nav-link waves-effect mx-2" target="_self" href="blog.html">Blog</a>
+      </li> 
+
+      <li class="nav-item">
+        <a class="nav-link waves-effect mx-2" target="_self" href="contact.html">Contact</a>
+      </li> 
+</ul>
+          
+                  </div>
+              </div>
+         </nav>
+
+<main class="my-4">
+
+	<section class="my-3">
+		  <div class="container">
+		  	   <div class="row my-5">
+		  	   	  <div class="col-md-6">
+		  	   	  	<h3 class="gray-text">ABOUT US</h3>
+		  	   	  	<p class="my-3">DANCING STAR ACADEMY was founded on 13th of feb 2019 by <strong>Rakhi Gupta </strong> with a belief
+                that every person can grow and gain the skills as a dancer.We constantly endeavour to provide a premier dance
+              education worthy of our eminent community status.</p>
+		  	   	  	<div class="img_cont">
+		  	   	  		 <img class="img-fluid" src="https://cdn.wallpapersafari.com/85/77/8aCd3f.jpg">
+		  	   	  	</div>
+		  	   	  </div>
+		  	   	   <div class="col-md-6">
+		  	   	   		<h3 class="gray-text">WHAT IS OUR GOAL?</h3>
+		  	   	  	<p class="my-3">DANCING STAR ACADEMY aims to provide quality dance training and making dance available 
+                to all. DSA is a well- known dance academy in faridabad, we offer dance classes to every age group person 
+              in a family- friendly, safe and supportive environment.</p>
+		  	   	  	<div class="mt-2 content_link">
+		  	   	  		<p><i class="fas fa-chevron-right mx-2"></i>Provide quality dance training and making dance available to all</p>
+		  	   	  		<p><i class="fas fa-chevron-right mx-2"></i>We provide age appropriate choreography</p>
+		  	   	  		<p><i class="fas fa-chevron-right mx-2"></i>We also provide private classes and home/ office visits</p>
+		  	   	  		<p><i class="fas fa-chevron-right mx-2"></i>We also conduct special classes for working persons, kids and ladies</p>
+		  	   	  	</div>
+		  	   	   </div>
+		  	   </div>
+		  </div>
+	</section>
+
+     <section class="my-5">
+     	 <div class="row">
+     	 	 <div class="col-md-6 ">
+     	 	 	<img class="img-fluid" src="https://www.pixelstalk.net/wp-content/uploads/2016/06/Free-Images-HD-Dance-Backgrounds-620x413.jpg">
+     	 	 </div>
+     	 	 <div class="col-md-6">
+     	 	 	<div class="my-5 ">
+     	 	 	 <h2 class="title my-5">Responsive design expert</h2>
+     	 	 	 <div id="expert-slider" class="owl-carousel owl-theme">
+                                <div class="item">
+                                    <p>
+                                        Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall proposition. Organically grow the holistic world view of disruptiveinnovationvia workplace diversity and empowerment.
+                                    </p>
+                                </div>
+                                <div class="item">
+                                    <p>
+                                        Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+     	 	 </div>
+     	 </div>
+     </section>
+
+     <section class="my-3 schedule">
+     	 <div class="container">
+     	 	 <div class="row">
+     	 	 	  <div class="col-md-12">
+                    <h3 class="section-title">Event Schedule</h3>
+                </div>
+     	 	 </div>
+     	 	 <div class="row my-4">
+     	 	 	     <div class="col-md-4 col-sm-6 text-center">
+                    <div class="schedule-box">
+                        <div class="time my-3">
+                            <time datetime="09:00">11:00 am</time> - <time datetime="22:00">08:00 pm</time>
+                        </div>
+                        <h4 class="my-2">Academy Timings</h4>
+                        <p class="my-2">Rakhi Gupta</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 text-center">
+                    <div class="schedule-box">
+                        <div class="time my-3">
+                            <time datetime="10:00">12:00 pm</time> - <time datetime="22:00">08:00 pm</time>
+                        </div>
+                        <h4 class="my-2">Choregrapher Timings</h4>
+                        <p class="my-2">Rakhi Gupta, Choreographer</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 text-center">
+                    <div class="schedule-box">
+                        <div class="time my-3">
+                            <time datetime="10:00">04:00 pm</time> - <time datetime="22:00">08:00 pm</time>
+                        </div>
+                        <h4 class="my-2">View from the top</h4>
+                        <p class="my-2">Prem Jackson, Choreographer</p>
+                    </div>
+                </div>
+     	 	 </div>
+     	 </div>
+     </section>
+
+
+	 <section class="mt-2 blessing_container">
+	 	 <div class="row my-5">
+	 	 	 <div class="col-md-6"></div>
+	 	 	  <div class="col-md-6"></div>
+	 	 </div>
+	 </section>
+
+	 <section class="mt-4 dance_work">
+  <div class="container">
+     <div class="row ">
+         <div class="col-12 text-center my-4 px-5">
+             <h2>IMPRESSED? LET’S WORK TOGETHER</h2>
+             <p class="lead">At vero eos et accusamus et iusto odio dignissimos ducimus qui ditqs praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias
+
+            </p>
+            <a href="contact.html" target='' class="btn btn-lg btn-outline-white text-uppercase">Hire Us</a>
+         </div>
+     </div>
+   </div>
+ </section>
+
+	 <section class="mt-3 ">
+       <div class="row footer-top py-4">
+          <div class="col-md-8  d-flex justify-content-center ">
+            <div class="footer-top-content px-4 my-2">
+             <h4 class="wow fadeInUp" data-wow-delay="0.3s">BOOK YOUR ONLINE APPOINTMENT</h4>
+             <p class="lead wow fadeInDown" data-wow-delay="0.6s">Call to action button example for booking appointment for patients.</p>
+           </div>
+          </div>
+            <div class="col-md-4  text-center">
+               <button id="createAccount" class="btn btn-lg action bg-white wow fadeInLeft" data-wow-delay="0.3s">Go to Action Button</button>
+          </div>
+       </div>
+   </section>
+</main>
+
+<footer>
+	<div class="container my-2">
+		 <div class="row py-5">
+		 	 <div class="col-md-4 ">
+		 	 	<h2>CONTACT</h2>
+		 	 	<div class="seprator1"></div>
+		 	 	<div class="content mt-3 text-white">
+		 	 		 <p> guptarakhi995@gmail.com</p>
+		 	 		  <p> 8130455924</p>
+		 	 		   <p> Shop No.- 357 New Bhoor Colony</p>
+              <p>  Opposite Sec 29</p>
+              <p>  Near Rama Sweets, Faridabad</p>
+		 	 	</div>
+		 	 </div>
+		 	 <div class="col-md-4 ">
+		 	 	<h2>LATEST NEWS</h2>
+		 	 	<div class="seprator1"></div>
+		 	 	<div class="content row">
+		 	 		<div class="col-3 mt-4">
+		 	 			<img class="img-fluid" src="https://images.unsplash.com/photo-1502132878278-fc497750f27a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60">
+		 	 		</div>
+		 	 		<div class="col-3 mt-4">
+		 	 			<img class="img-fluid" src="https://images.unsplash.com/photo-1519925610903-381054cc2a1c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60">
+		 	 		</div>
+		 	 		<div class="col-3 mt-4">
+		 	 			<img class="img-fluid" src="https://images.unsplash.com/photo-1511715282680-fbf93a50e721?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60">
+		 	 		</div>
+		 	 		<div class="col-3 mt-4">
+		 	 			<img class="img-fluid" src="https://images.unsplash.com/photo-1463592177119-bab2a00f3ccb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60">
+		 	 		</div>
+		 	 		<div class="col-3 mt-4">
+		 	 			<img class="img-fluid" src="https://images.unsplash.com/photo-1479812627010-aa5bd9d173b1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60">
+		 	 		</div>
+		 	 		<div class="col-3 mt-4">
+		 	 			<img class="img-fluid" src="https://images.unsplash.com/photo-1479813183133-f2e9b38ed6c4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60">
+		 	 		</div>
+		 	 		<div class="col-3 mt-4">
+		 	 			<img class="img-fluid" src="https://images.unsplash.com/photo-1455072414764-a3fb958b8415?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60">
+		 	 		</div>
+		 	 	</div>
+		 	 </div>
+		 	 <div class="col-md-4 ">
+		 	 	<h2>Dancing Star Academy </h2>
+		 	 	<div class="seprator1"></div>
+		 	 	<div class="content mt-3 text-white">
+		 	 		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut in egestas lectus. Etiam tempor odio tellus, at bibendum neque faucibus quis. Sed vel facilisis elit.</p>
+		 	 		<p>Nullam fringilla pharetra diam non accumsan. Morbi eget aliquam mauris. Etiam vehicula efficitur mi.</p>
+		 	 	</div>
+		 	 </div>
+		 </div>
+	</div>
+</footer>
+
+ <div class="container">
+         <div class="row">
+             <div class="col-md-6">
+                 <div class="card">
+                     <section>
+                         <div role="dialog" class="modal fade login">
+                             <div class="modal-dialog modal-sm">
+                                  <div class="modal-content">
+                                      <div class="modal-header">
+                                         <img class="img-fluid " src="https://images.unsplash.com/photo-1509670811615-bb8b07cb3caf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60">
+                                      </div>
+                                      <div class="modal-body text-center">
+                                           <p class="mt-1 mb-2">Please fill Details</p>
+                                            <div class="md-form mx-0 ">
+                        <input  type="text" id="form1" class="form-control ">
+                        <label for="form1" class="ml-0">Full name</label>
+                        </div>
+
+                        <div class="md-form mx-auto">
+                            <input type="text" id="form2" class="form-control">
+                            <label for="form2">Email Id</label>
+                            </div>
+                       
+                          <div class="md-form mx-auto">
+                            <input type="text" id="form3" class="form-control">
+                            <label for="form3">Address</label>
+                            </div>
+                        </div>
+
+                      <div class="text-center my-2">
+                        <button class="btn btn-cyan">Submit
+                          <i class="fas fa-sign-in-alt ml-1"></i>
+                        </button>
+                                      </div>
+                                  </div>
+                             </div>
+                         </div> 
+                     </section>
+                 </div>
+             </div>
+         </div>
+     </div>
+
+
+
+
+        <!-- javascript project -->
+       
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.8/js/mdb.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+<script type="text/javascript">
+    new WOW().init();
+
+     $("#createAccount").on("click",function(event){
+        event.preventDefault();
+          $(".login").modal("show");
+    });
+
+   $("#expert-slider").owlCarousel({
+   	   loop:true,
+	    items: 1
+   });
+
+  </script>
+
+    </body>
+</html>

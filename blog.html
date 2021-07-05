@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+       <meta charset="utf-8">
+       <meta name="viewport" content="width=device-width,initial-scale=1">
+       <meta name="title" content="Dancing website" />
+       <meta http-equiv="x-ua-compatible" content="ie=edge">
+       <title>Let's Dance</title>
+       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+       <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.css">
+       <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.8/css/mdb.min.css" rel="stylesheet"> 
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
+       <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css">
+<link rel="stylesheet" type="text/css" href="css/slider.css">
+       <style rel="stylesheet">
+ @import 'https://fonts.googleapis.com/css?family=Lora:400,400i,700|Raleway:300,600,700,900';
+
+body {
+  font-family: 'Lora', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+   color:#676767;
+  background:#000;
+  cursor: default;
+ position: relative;
+  height:100%;
+  overflow-x: hidden; 
+ }
+ 
+
+#landing{
+ height: 100vh;
+
+}
+.landing_page{
+	height:100%;
+    background:url("http://getwallpapers.com/wallpaper/full/5/f/f/681148.jpg") center/cover no-repeat fixed;
+	 color:#fff;
+}
+.footer-top{
+  background:linear-gradient(gray,black,blue);
+}
+.action{
+  border-radius:20px;
+  color:#6259B3;
+  font-style: 20px;
+  font-weight:600;
+}
+.footer-top{
+  color:#fff;
+}
+
+.dance_work{
+  background: url("https://wallpaperbro.com/img/11031.jpg")center/cover no-repeat fixed;
+  padding-top:10%;
+  color:#fff;
+}
+
+footer{
+	background: #04211C;
+}
+.seprator1{
+	width:100px;
+	height:1px;
+	background:gray;
+     position: relative;
+}
+.seprator2{
+	width:100px;
+	height:1px;
+	background:navy;
+     position: relative;
+}
+.seprator1:after{
+	content:"";
+    position:absolute;
+    top:0;
+    left:0px;
+    bottom: 0;
+    width:50%;
+    height:3px;
+    background: #07FBD1;
+}
+
+.content div{
+	height:50px;
+}
+.content img{
+	height:100%;
+}
+.img1{
+
+	 position: relative;
+  overflow: hidden;
+}
+.img1 .buttons .fancybox{
+	color: #fff;
+	font-weight: 600;
+	font-size: 20px;
+
+}
+.img1 .buttons{
+  position: absolute;
+  background: #000;
+  bottom: 0;
+  left:0;
+  right: 0;
+  width:100%;
+  text-align: center;
+  padding: 3% 0;
+  opacity: 0;
+  border:1px solid #fff;
+}
+.img1:hover figure .overlay ,.img1 .buttons{
+  opacity:1;
+  -webkit-transform: scale3d(1, 1, 1);
+  transform: scale3d(1, 1, 1);
+  transition: all 0.5s ease-in-out;
+}
+.blessing_container .img-wrapper{
+ border:1px solid #fff;
+ width: 100%;
+ height:48.5vh;
+}
+ .expand_img{
+	height:50vh;
+}
+.blessing_container .long{
+	height:100vh;
+}
+
+.blessing_container .img-wrapper img{
+   width: 100%;
+   height:100%;
+  -webkit-transform: scale3d(1, 1, 1);
+  transform: scale3d(1, 1, 1);
+  transition: -webkit-transform 400ms;
+  transition: transform 400ms;
+  transition: transform 400ms, -webkit-transform 400ms;
+}
+figure .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 10px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  transition: opacity 400ms;
+}
+
+.navbar-nav li a.current,
+.navbar-nav li a:focus,
+.navbar-nav li a:hover {
+  background-color: transparent;
+  border-bottom: 1px solid #32B0EE;
+  color: #fff;
+}
+
+.modal-dialog{
+  position: relative;
+  top:10%;
+  
+}
+.modal-header{
+  width:20vh;
+  height:20vh;
+  position: absolute;
+  top:-15%;
+  left:50%;
+  transform: translateX(-50%);
+ 
+}
+.modal-header img{
+  width:100%;
+  height:100%;
+   border:3px solid #fff;
+  border-radius:50%;
+}
+.modal-body{
+  margin-top:14vh;
+}
+
+</style>
+</head>
+<body>
+
+
+<section id="landing">
+   <div class="view landing_page">
+   	   <div class="mask d-flex justify-content-center align-items-center">
+   	   	   <div class="container">
+   	   	   	   <div class="row">
+   	   	   	   	  <div class="col-md-7 text-center">
+   	   	   	   	  	  <h3 class="text-white">PROPERTY SEARCHING JUST GOT SO EASY</h3>
+   	   	   	   	  	  <hr class="bg-success my-4">
+   	   	   	   	  	  <p>
+                           <strong class="h5">Best & free guide of responsive web design</strong>
+                      </p>
+   	   	   	   	  	  <p><img src="image/quote-sign-left.png" class="quote-sign-left mr-4" alt=""><span class="ml-5">
+                       Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.</span>
+                      </p>
+   	   	   	   	  </div>
+   	   	   	   </div>
+   	   	   </div>
+   	   </div>
+   </div>
+</section>
+
+<nav id="header" data-wow-duration="500ms" class=" wow zoomIn navbar scrolling-navbar navbar-expand-md bg-dark navbar-dark ">
+              <div class="container-fluid">
+                  <a class="navbar-brand waves-effect " href="#">
+                      <strong class='blue-text' ><img src="image/logo.png"></strong>
+                  </a>
+                  <button type="button" class="navbar-toggler" data-target="#navbar_scroll" data-toggle="collapse" aria-  controls="navbarSupportedContent" aria-expanded="false" aria-  label="Toggle navigation" >
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div id="navbar_scroll" class="collapse navbar-collapse" style="overflow-y: hidden;">
+                    <ul class="navbar-nav ml-auto">
+                       <li class="nav-item active ">
+        <a class="nav-link waves-effect mx-2"  target="_self" href="index.html">Home  <span class="sr-only">(current)</span> </a>
+                </li>
+
+      <li class="nav-item">
+        <a class="nav-link waves-effect mx-2" target="_self" href="feature.html">Features</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link waves-effect mx-2" target="_self" href="work.html">Work</a>
+      </li> 
+
+      <li class="nav-item">
+        <a class="nav-link waves-effect mx-2" target="_self" href="blog.html">Blog</a>
+      </li> 
+
+      <li class="nav-item">
+        <a class="nav-link waves-effect mx-2" target="_self" href="contact.html">Contact</a>
+      </li> 
+</ul>
+          
+                  </div>
+              </div>
+         </nav>
+
+<main class="my-4">
+
+	 <section class="mt-2 blessing_container">
+	 	 <div class="container text-center">
+	 	 	<h1 class="text-white mt-5 mb-2">BLOGS</h1>
+	 	 	<hr class="seprator2 mb-5"></hr>
+	 	 	 <div class="row">
+	 	 	 	 <div class="col-md-6 img1 ">
+	 	 	 	 	 <figure class="wow fadeInLeft animated" data-wow-duration="500ms" data-wow-delay="0ms">
+	 	 	 	 	 	 <div class="img-wrapper long">
+                            <img src="https://wallpaperbro.com/img/553499.jpg" class="img-fluid" alt="" >
+                             <div class="overlay">
+                                <div class="buttons">
+                                   <a rel="gallery" class="fancybox mx-3 " href="https://wallpaperbro.com/img/553499.jpg">Demo</a>
+                                   <div class="my-3">
+                                   	 <a href="#" class="fab fa-pinterest text-white  mx-3" aria-hidden="true"></a>
+        <a href="#" class="fab fa-twitter text-white  mx-3" aria-hidden="true"></a>
+        <a href="#" class="fab fa-linkedin text-white  mx-3" aria-hidden="true"></a>
+       <a href="#" class="fab fa-stumbleupon text-white  mx-3" aria-hidden="true"></a>
+                                   </div>
+                                 </div>
+                             </div>
+                    </div>
+	 	 	 	 	 </figure>
+	 	 	 	 </div>
+	 	 	 	 <div class="col-md-6">
+	 	 	 	 	<div class="row">
+	 	 	 	 		 <div class="col-md-6 img1">
+	 	 	 	 		 	 <figure class="wow fadeInLeft animated" data-wow-duration="500ms" data-wow-delay="0ms">
+	 	 	 	 	 	 <div class="img-wrapper">
+                            <img src="https://wallpaperbro.com/img/553488.jpg" class="img-fluid" alt="" >
+                             <div class="overlay">
+                                <div class="buttons">
+                                   <a rel="gallery" class="fancybox mx-3 " href="https://wallpaperbro.com/img/553488.jpg">Demo</a>
+                                   <div class="my-3">
+                                   	 <a href="#" class="fab fa-pinterest text-white  mx-3" aria-hidden="true"></a>
+        <a href="#" class="fab fa-twitter text-white  mx-3" aria-hidden="true"></a>
+        <a href="#" class="fab fa-linkedin text-white  mx-3" aria-hidden="true"></a>
+       <a href="#" class="fab fa-stumbleupon text-white  mx-3" aria-hidden="true"></a>
+                                   </div>
+                                 </div>
+                             </div>
+                    </div>
+	 	 	 	 	 </figure>
+	 	 	 	 		 </div>
+	 	 	 	 		 <div class="col-md-6 img1">
+	 	 	 	 		 	 <figure class="wow fadeInLeft animated" data-wow-duration="500ms" data-wow-delay="0ms">
+	 	 	 	 	 	 <div class="img-wrapper">
+                            <img src="https://wallpaperbro.com/img/553475.jpg" class="img-fluid" alt="" >
+                             <div class="overlay">
+                                <div class="buttons">
+                                   <a rel="gallery" class="fancybox mx-3 " href="https://wallpaperbro.com/img/553475.jpg">Demo</a>
+                                   <div class="my-3">
+                                   	 <a href="#" class="fab fa-pinterest text-white  mx-3" aria-hidden="true"></a>
+        <a href="#" class="fab fa-twitter text-white  mx-3" aria-hidden="true"></a>
+        <a href="#" class="fab fa-linkedin text-white  mx-3" aria-hidden="true"></a>
+       <a href="#" class="fab fa-stumbleupon text-white  mx-3" aria-hidden="true"></a>
+                                   </div>
+                                 </div>
+                             </div>
+                    </div>
+	 	 	 	 	 </figure>
+	 	 	 	 		 </div>
+	 	 	 	 	</div>
+	 	 	 	 	<div class="row">
+	 	 	 	 		 <div class="col-md-12 img1">
+	 	 	 	 		 	 <figure class="wow fadeInLeft animated" data-wow-duration="500ms" data-wow-delay="0ms">
+	 	 	 	 	 	 <div class="img-wrapper">
+                            <img src="https://wallpaperbro.com/img/11006.jpg" class="img-fluid" alt="" >
+                             <div class="overlay">
+                                <div class="buttons">
+                                   <a rel="gallery" class="fancybox mx-3 " href="https://wallpaperbro.com/img/11006.jpg">Demo</a>
+                                   <div class="my-3">
+                                   	 <a href="#" class="fab fa-pinterest text-white  mx-3" aria-hidden="true"></a>
+        <a href="#" class="fab fa-twitter text-white  mx-3" aria-hidden="true"></a>
+        <a href="#" class="fab fa-linkedin text-white  mx-3" aria-hidden="true"></a>
+       <a href="#" class="fab fa-stumbleupon text-white  mx-3" aria-hidden="true"></a>
+                                   </div>
+                                 </div>
+                             </div>
+                    </div>
+	 	 	 	 	 </figure>
+	 	 	 	 		 </div>
+	 	 	 	 	</div>
+	 	 	 	 </div>
+	 	 	 </div>
+
+             <div class="row">
+	 	 	 	
+	 	 	 	 <div class="col-md-6">
+	 	 	 	 	<div class="row">
+	 	 	 	 		 <div class="col-md-6 img1">
+	 	 	 	 		 	 <figure class="wow fadeInLeft animated" data-wow-duration="500ms" data-wow-delay="0ms">
+	 	 	 	 	 	 <div class="img-wrapper">
+                            <img src="https://wallpaperbro.com/img/553511.jpg" class="img-fluid" alt="" >
+                             <div class="overlay">
+                                <div class="buttons">
+                                   <a rel="gallery" class="fancybox mx-3 " href="https://wallpaperbro.com/img/553511.jpg">Demo</a>
+                                   <div class="my-3">
+                                   	 <a href="#" class="fab fa-pinterest text-white  mx-3" aria-hidden="true"></a>
+        <a href="#" class="fab fa-twitter text-white  mx-3" aria-hidden="true"></a>
+        <a href="#" class="fab fa-linkedin text-white  mx-3" aria-hidden="true"></a>
+       <a href="#" class="fab fa-stumbleupon text-white  mx-3" aria-hidden="true"></a>
+                                   </div>
+                                 </div>
+                             </div>
+                    </div>
+	 	 	 	 	 </figure>
+	 	 	 	 		 </div>
+	 	 	 	 		 <div class="col-md-6 img1">
+	 	 	 	 		 	 <figure class="wow fadeInLeft animated" data-wow-duration="500ms" data-wow-delay="0ms">
+	 	 	 	 	 	 <div class="img-wrapper">
+                            <img src="https://wallpaperbro.com/img/476522.jpg" class="img-fluid" alt="" >
+                             <div class="overlay">
+                                <div class="buttons">
+                                   <a rel="gallery" class="fancybox mx-3 " href="https://wallpaperbro.com/img/476522.jpg">Demo</a>
+                                   <div class="my-3">
+                                   	 <a href="#" class="fab fa-pinterest text-white  mx-3" aria-hidden="true"></a>
+        <a href="#" class="fab fa-twitter text-white  mx-3" aria-hidden="true"></a>
+        <a href="#" class="fab fa-linkedin text-white  mx-3" aria-hidden="true"></a>
+       <a href="#" class="fab fa-stumbleupon text-white  mx-3" aria-hidden="true"></a>
+                                   </div>
+                                 </div>
+                             </div>
+                    </div>
+	 	 	 	 	 </figure>
+	 	 	 	 		 </div>
+	 	 	 	 	</div>
+	 	 	 	 	<div class="row">
+	 	 	 	 		 <div class="col-md-12 img1">
+	 	 	 	 		 	 <figure class="wow fadeInLeft animated" data-wow-duration="500ms" data-wow-delay="0ms">
+	 	 	 	 	 	 <div class="img-wrapper">
+                            <img src="https://wallpaperbro.com/img/553521.jpg" class="img-fluid" alt="" >
+                             <div class="overlay">
+                                <div class="buttons">
+                                   <a rel="gallery" class="fancybox mx-3 " href="https://wallpaperbro.com/img/553521.jpg">Demo</a>
+                                   <div class="my-3">
+                                   	 <a href="#" class="fab fa-pinterest text-white  mx-3" aria-hidden="true"></a>
+        <a href="#" class="fab fa-twitter text-white  mx-3" aria-hidden="true"></a>
+        <a href="#" class="fab fa-linkedin text-white  mx-3" aria-hidden="true"></a>
+       <a href="#" class="fab fa-stumbleupon text-white  mx-3" aria-hidden="true"></a>
+                                   </div>
+                                 </div>
+                             </div>
+                    </div>
+	 	 	 	 	 </figure>
+	 	 	 	 		 </div>
+	 	 	 	 	</div>
+	 	 	 	 </div>
+
+        <div class="col-md-6 img1 ">
+	 	 	 	 	 <figure class="wow fadeInLeft animated" data-wow-duration="500ms" data-wow-delay="0ms">
+	 	 	 	 	 	 <div class="img-wrapper long">
+                            <img src="https://wallpaperbro.com/img/11098.jpg" class="img-responsive" alt="" >
+                             <div class="overlay">
+                                <div class="buttons">
+                                   <a rel="gallery" class="fancybox mx-3 " href="https://wallpaperbro.com/img/11098.jpg">Demo</a>
+                                   <div class="my-3">
+                                   	 <a href="#" class="fab fa-pinterest text-white  mx-3" aria-hidden="true"></a>
+        <a href="#" class="fab fa-twitter text-white  mx-3" aria-hidden="true"></a>
+        <a href="#" class="fab fa-linkedin text-white  mx-3" aria-hidden="true"></a>
+       <a href="#" class="fab fa-stumbleupon text-white  mx-3" aria-hidden="true"></a>
+                                   </div>
+                                 </div>
+                             </div>
+                    </div>
+	 	 	 	 	 </figure>
+	 	 	 	 </div>
+
+	 	 	
+	 	 	 	 <div class="col-md-12  img1 ">
+	 	 	 	 	 <figure class="wow fadeInLeft animated" data-wow-duration="500ms" data-wow-delay="0ms">
+	 	 	 	 	 	 <div class="img-wrapper expand_img ">
+                            <img src="https://wallpaperbro.com/img/553549.jpg" class="img-fluid" alt="" >
+                             <div class="overlay">
+                                <div class="buttons">
+                                   <a rel="gallery" class="fancybox mx-3 " href="https://wallpaperbro.com/img/553549.jpg">Demo</a>
+                                   <div class="my-3">
+                                   	 <a href="#" class="fab fa-pinterest text-white  mx-3" aria-hidden="true"></a>
+        <a href="#" class="fab fa-twitter text-white  mx-3" aria-hidden="true"></a>
+        <a href="#" class="fab fa-linkedin text-white  mx-3" aria-hidden="true"></a>
+       <a href="#" class="fab fa-stumbleupon text-white  mx-3" aria-hidden="true"></a>
+                                   </div>
+                                 </div>
+                             </div>
+                    </div>
+	 	 	 	 	 </figure>
+	 	 	 	 </div>
+	 	 	 </div>
+
+	 	 </div>
+	 </section>
+
+	 <section class="mt-4 dance_work">
+  <div class="container">
+     <div class="row ">
+         <div class="col-12 text-center my-4 px-5">
+             <h2>IMPRESSED? LET’S WORK TOGETHER</h2>
+             <p class="lead">At vero eos et accusamus et iusto odio dignissimos ducimus qui ditqs praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias
+
+            </p>
+             <a href="contact.html" target='' class="btn btn-lg btn-outline-white text-uppercase">Hire Us</a>
+         </div>
+     </div>
+   </div>
+ </section>
+
+	 <section class="mt-3 ">
+       <div class="row footer-top py-4">
+          <div class="col-md-8  d-flex justify-content-center ">
+            <div class="footer-top-content px-4 my-2">
+             <h4 class="wow fadeInUp" data-wow-delay="0.3s">BOOK YOUR ONLINE APPOINTMENT</h4>
+             <p class="lead wow fadeInDown" data-wow-delay="0.6s">Call to action button example for booking appointment for patients.</p>
+           </div>
+          </div>
+            <div class="col-md-4  text-center">
+               <button id="createAccount" class="btn btn-lg action bg-white wow fadeInLeft" data-wow-delay="0.3s">Go to Action Button</button>
+          </div>
+       </div>
+   </section>
+</main>
+
+<footer>
+	<div class="container my-2">
+		 <div class="row py-5">
+		 	 <div class="col-md-4 ">
+		 	 	<h2>CONTACT</h2>
+		 	 	<div class="seprator1"></div>
+		 	 	<div class="content mt-3 text-white">
+		 	 		 <p> info@guitarchoose.com</p>
+		 	 		  <p> 0123 456 789 0112</p>
+		 	 		   <p> Greenplatz Ben 29, Germany 60435</p>
+		 	 		    <p>  (0012) 654 356 445</p>
+		 	 	</div>
+		 	 </div>
+		 	 <div class="col-md-4 ">
+		 	 	<h2>LATEST NEWS</h2>
+		 	 	<div class="seprator1"></div>
+		 	 	<div class="content row">
+		 	 		<div class="col-3 mt-4">
+		 	 			<img class="img-fluid" src="https://images.unsplash.com/photo-1502132878278-fc497750f27a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60">
+		 	 		</div>
+		 	 		<div class="col-3 mt-4">
+		 	 			<img class="img-fluid" src="https://images.unsplash.com/photo-1519925610903-381054cc2a1c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60">
+		 	 		</div>
+		 	 		<div class="col-3 mt-4">
+		 	 			<img class="img-fluid" src="https://images.unsplash.com/photo-1511715282680-fbf93a50e721?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60">
+		 	 		</div>
+		 	 		<div class="col-3 mt-4">
+		 	 			<img class="img-fluid" src="https://images.unsplash.com/photo-1463592177119-bab2a00f3ccb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60">
+		 	 		</div>
+		 	 		<div class="col-3 mt-4">
+		 	 			<img class="img-fluid" src="https://images.unsplash.com/photo-1479812627010-aa5bd9d173b1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60">
+		 	 		</div>
+		 	 		<div class="col-3 mt-4">
+		 	 			<img class="img-fluid" src="https://images.unsplash.com/photo-1479813183133-f2e9b38ed6c4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60">
+		 	 		</div>
+		 	 		<div class="col-3 mt-4">
+		 	 			<img class="img-fluid" src="https://images.unsplash.com/photo-1455072414764-a3fb958b8415?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60">
+		 	 		</div>
+		 	 	</div>
+		 	 </div>
+		 	 <div class="col-md-4 ">
+		 	 	<h2>Dancing Academy </h2>
+		 	 	<div class="seprator1"></div>
+		 	 	<div class="content mt-3 text-white">
+		 	 		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut in egestas lectus. Etiam tempor odio tellus, at bibendum neque faucibus quis. Sed vel facilisis elit.</p>
+		 	 		<p>Nullam fringilla pharetra diam non accumsan. Morbi eget aliquam mauris. Etiam vehicula efficitur mi.</p>
+		 	 	</div>
+		 	 </div>
+		 </div>
+	</div>
+</footer>
+
+ <div class="container">
+         <div class="row">
+             <div class="col-md-6">
+                 <div class="card">
+                     <section>
+                         <div role="dialog" class="modal fade login">
+                             <div class="modal-dialog modal-sm">
+                                  <div class="modal-content">
+                                      <div class="modal-header">
+                                         <img class="img-fluid " src="https://images.unsplash.com/photo-1509670811615-bb8b07cb3caf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60">
+                                      </div>
+                                      <div class="modal-body text-center">
+                                           <p class="mt-1 mb-2">Please fill Details</p>
+                                            <div class="md-form mx-0 ">
+                        <input  type="text" id="form1" class="form-control ">
+                        <label for="form1" class="ml-0">Full name</label>
+                        </div>
+
+                        <div class="md-form mx-auto">
+                            <input type="text" id="form2" class="form-control">
+                            <label for="form2">Email Id</label>
+                            </div>
+                       
+                          <div class="md-form mx-auto">
+                            <input type="text" id="form3" class="form-control">
+                            <label for="form3">Address</label>
+                            </div>
+                        </div>
+
+                      <div class="text-center my-2">
+                        <button class="btn btn-cyan">Submit
+                          <i class="fas fa-sign-in-alt ml-1"></i>
+                        </button>
+                                      </div>
+                                  </div>
+                             </div>
+                         </div> 
+                     </section>
+                 </div>
+             </div>
+         </div>
+     </div>
+
+
+
+
+        <!-- javascript project -->
+       
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.8/js/mdb.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+<script type="text/javascript" src="js/slider.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+<script type="text/javascript">
+    new WOW().init();
+
+     $("#createAccount").on("click",function(event){
+        event.preventDefault();
+          $(".login").modal("show");
+    });
+
+    $(".fancybox").fancybox({
+    padding: 0,
+
+    openEffect : 'elastic',
+    openSpeed  : 450,
+
+    closeEffect : 'elastic',
+    closeSpeed  : 350,
+
+    closeClick : true,
+    helpers : {
+        title : { 
+            type: 'inside' 
+        },
+        overlay : {
+            css : {
+                'background' : 'rgba(0,0,0,0.8)'
+            }
+        }
+    }
+});
+
+
+  </script>
+
+    </body>
+</html>

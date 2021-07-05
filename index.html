@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+       <meta charset="utf-8">
+       <meta name="viewport" content="width=device-width,initial-scale=1">
+       <meta name="title" content="Dancing website" />
+       <meta http-equiv="x-ua-compatible" content="ie=edge">
+       <title>Let's Dance</title>
+       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+       <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.css">
+       <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.8/css/mdb.min.css" rel="stylesheet"> 
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css">
+       <style rel="stylesheet">
+          @import 'https://fonts.googleapis.com/css?family=Lora:400,400i,700|Raleway:300,600,700,900';
+          @import 'https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css';
+
+     body {
+  font-family: 'Lora', Helvetica, Arial, sans-serif;
+  color:#676767;
+  background: #fbfbfb;
+   }
+    .testimonal .owl-theme .owl-controls .owl-page span{
+    background: #1EEACB;
+}
+   #wrapper,.social{
+        -moz-transition:all 0.5s ease;
+		-webkit-transition: all 0.5s ease;
+		-ms-transition: all 0.5s ease;
+		transition: all 0.5s ease;
+		position:relative;
+		z-index: 1;
+		
+   }
+   footer{
+      -moz-transition:all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    position:relative;
+    z-index: 1;
+    background: #000;
+   }
+   #wrapper >.bg{
+      position:fixed;
+      top:0;
+      left:0;
+      width:100%;
+      height:100%;
+      background: url("https://wallpaperbro.com/img/553518.jpg");
+      background-attachment: scroll;
+      background-size: cover;
+      background-repeat: no-repeat;
+    	z-index: -1;
+   }
+  
+    #intro{
+      transition:all 0.8s ease-in-out;
+    }
+ .heading1 h1{
+   font-weight:600;
+   font-size:3rem;
+   line-height: 1;
+ }
+ 
+ 
+   #intro h1{
+    font-weight: 600;
+    font-size: 5rem;
+      line-height: 1;
+   }
+ #intro p {
+      font-size: 1.25rem;
+      font-style: italic;
+      margin-top: -0.25rem;
+      text-align: center;
+    }
+  
+  .content_intro{
+    height:80vh;
+    color:#fff;
+  }
+ 
+.down_icon{
+ border:3px solid #fff;
+ border-radius: 50%;
+ color:#fff;
+}
+.actions a:hover{
+  color:#0CE3C2;
+  border:3px solid #0CE3C2;
+}
+@media screen and (max-width: 736px) {
+
+   .heading1 h1{
+         font-size: 1.25rem;
+          line-height: 1.1;
+          margin-bottom: 1rem;
+   }
+     
+        #intro h1{
+          font-size: 3.25rem;
+          line-height: 1.1;
+          margin-bottom: 1rem;
+        }
+
+        #intro p {
+          font-size: 1rem;
+          margin-top: 0rem;
+        }
+      }
+.navbar{
+background-color: rgba(16, 22, 54, 0.2);
+border: 0 none;
+ margin: 0;  
+ -webkit-transition: background-color 800ms linear;
+ -moz-transition: background-color 800ms linear;
+  -ms-transition: background-color 800ms linear;
+ -o-transition: background-color 800ms linear;
+ transition: background-color 800ms linear;
+}
+  .navbar-brand {
+  padding: 0;
+}
+.navbar-nav li a{
+  color:gray;
+}
+.navbar-nav .active a{
+  color:#fff;
+}
+.navbar-nav .active a{
+  border-bottom: 1px solid #32B0EE;
+  color: #fff;
+}
+.navbar-nav li a.current,
+.navbar-nav li a:focus,
+.navbar-nav li a:hover {
+  background-color: transparent;
+  border-bottom: 1px solid #32B0EE;
+  color: #fff;
+}
+.navbar-toggler span {
+  color: #fff;
+}
+#intro.hidden {
+      -moz-pointer-events: none;
+      -webkit-pointer-events: none;
+      -ms-pointer-events: none;
+      pointer-events: none;
+      -moz-transform: translateY(2rem);
+      -webkit-transform: translateY(2rem);
+      -ms-transform: translateY(2rem);
+      transform: translateY(2rem);
+      -moz-transition: opacity 0.5s ease, -moz-transform 0.5s ease, visibility 0.5s;
+      -webkit-transition: opacity 0.5s ease, -webkit-transform 0.5s ease, visibility 0.5s;
+      -ms-transition: opacity 0.5s ease, -ms-transform 0.5s ease, visibility 0.5s;
+      transition: opacity 0.5s ease, transform 0.5s ease, visibility 0.5s;
+      opacity: 0;
+      visibility: hidden;
+    }
+
+#header{
+  margin-top:20vh;
+}
+
+
+     .seprator1{
+      position: relative;
+      background: #A7A5A1;
+      width:150px;
+      height:0.5px;
+    }
+
+    .seprator1:after{
+        position: absolute;
+          width:50px;
+          height:2px;
+         left:50%;
+         transform: translateX(-50%);
+         content:"";
+         top:0;
+         background:#F9AB0F;
+    }
+
+#main_container{
+  background: #fff;
+}
+.dance_item_long,.dance_item_long img{
+  width:100%;
+  height:100vh;
+}
+.dance_item ,.dance_item_long{
+  overflow:hidden;
+}
+.dance_item ,.dance_item img{
+  width:100%;
+  height:50vh;
+}
+
+.main2{
+  padding-top: 50px;
+  background:url("https://cdn.wallpapersafari.com/65/11/zPghNX.jpg");
+  background-position: center;
+  background-size: cover;
+  color:#fff;
+}
+
+.seprator2{
+      text-align: center;
+      position: relative;
+      width:150px;
+      height:0.5px;
+}
+
+.seprator2:after{
+        position: absolute;
+          width:50px;
+          height:2px;
+         left:55%;
+         transform: translateX(50%);
+         content:"";
+         top:0;
+         background:#05771E;
+}
+.vira-card-content h3{
+  color:#7D837E;
+  font-weight:520;
+}
+.vira-card-header{
+ height:40vh;
+}
+.vira-card-header img{
+  height:100%;
+}
+.categories{
+  background:#EDEFED;
+  padding:7% 0;
+}
+.footer-logo img{
+  height:100%;
+}
+.footer-logo{
+  height:60px;
+}
+.footer p{
+  border-right: 1px solid #0EFAE1;
+   border-left: 1px solid #0EFAE1;
+}
+.social a i{
+  color:#fff;
+}
+.social a i:hover {
+
+  color:#0EFBF8;
+}
+
+
+
+
+    </style>      
+    </head>
+    <body>
+
+        <div id="wrapper" >
+            <div class="bg"></div>
+            <div class="container ">
+               <div class="row main">
+                  <div class="col-md-12 content_intro justify-content-center align-items-center d-flex">
+            <div class=" text-center " id="intro">
+            <h1 data-wow-duration="500ms" data-wow-delay="500ms" class="wow bounceInDown animated" ><strong>DANCING STAR<br /><span data-wow-duration="550ms" data-wow-delay="520ms" class="wow bounceInDown">
+            ACADEMY</span></strong></h1>
+            <p class="mt-3">A free, fully responsive HTML5 + CSS3 site template designed by <br />
+            and distributed by .</p>
+            <div class="actions mt-5">
+              <a href="" class="button down_icon p-3  scrolly"><i class="fas fa-arrow-down mx-2"></i></a>
+            </div>
+          </div>
+
+         
+                  </div>
+               </div>
+            </div>
+
+
+
+         <nav id="header" data-wow-duration="500ms" class=" wow zoomIn navbar scrolling-navbar navbar-expand-md navbar-dark ">
+              <div class="container-fluid">
+                  <a class="navbar-brand waves-effect " href="#">
+                      <strong class='blue-text' ><img src="image/logo.png"></strong>
+                  </a>
+                  <button type="button" class="navbar-toggler" data-target="#navbar_scroll" data-toggle="collapse" aria-  controls="navbarSupportedContent" aria-expanded="false" aria-  label="Toggle navigation" >
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div id="navbar_scroll" class="collapse navbar-collapse" style="overflow-y: hidden;">
+                    <ul class="navbar-nav ml-auto">
+                       <li class="nav-item active ">
+        <a class="nav-link waves-effect mx-2"  target="_self" href="index.html">Home  <span class="sr-only">(current)</span> </a>
+                </li>
+
+      <li class="nav-item">
+        <a class="nav-link waves-effect mx-2" target="_self" href="feature.html">Features</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link waves-effect mx-2" target="_self" href="work.html">Work</a>
+      </li> 
+
+      <li class="nav-item">
+        <a class="nav-link waves-effect mx-2" target="_self" href="blog.html">Blog</a>
+      </li> 
+
+      <li class="nav-item">
+        <a class="nav-link waves-effect mx-2" target="_self" href="contact.html">Contact</a>
+      </li> 
+</ul>
+          
+                  </div>
+              </div>
+         </nav>
+
+      
+             <div class="container">
+                 <div class="row d-flex justify-content-center">
+                     <div class="col-11"> 
+                        <main class="container" id="main_container">
+                          <section>
+                          <div class="row mt-5   justify-content-center">
+                             <div class="col-10  mt-5 text-center heading1">
+                               <h1> DANCING STAR ACADEMY</h1>
+                               <hr class="seprator1 my-3">
+ 
+                             </div>
+                             <div class="col-md-6 mt-3  text-center">
+                               <p>FEEL HIGH, FEEL DANCE</p>
+                            </div>
+                          </div>
+                        </section>
+  <hr class="my-3">
+                        <section class="mt-2">
+                            <div class="row  mid1">
+                               <div class="col-md-6">
+                                <div class="mid_img">
+                                 <img class="img-fluid " src="https://images.unsplash.com/photo-1509670811615-bb8b07cb3caf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60">
+                               </div>
+                               </div>
+                                <div class="col-md-6 ">
+                                  <div class="content mt-4">
+                                  <p>Western Dance also known as Country Dance, circumscribes many dance form or styles, which 
+                                  are typically danced to country- western music. Many distinct dances are done to country-western music. These dances include: Two Step, Waltz, Cowboy or Traveling Cha Cha,Polka Ten Step, Schottische, and other Western promenade dances, East Coast Swing, West Coast Swing, and Nightclub Two Step.</p></div>
+                                </div>
+                            </div>
+                        </section>
+
+                       
+
+                           <section class="mt-5 categories">
+                               <div class="container my-4 text-center">
+                                <h2>WELCOME TO DANCING STAR ACADEMY</h2>  <hr class="seprator1 my-3">
+                                <p>Dancing Star Academy offers quality dance instruction done with care.  </p>
+                                <p>We provide a variety of classes taught by experienced Choreographers.</p>
+                                 <div class="container">
+                                   <div class="row text-center"> 
+
+                                       <div class="col-md-4">
+                                           <div class="vira-card">
+                                           <div class="vira-card-header my-3">
+                                              <iframe width="100%"height="100%" src="https://www.youtube.com/embed/VS6UOyTb5eU" 
+                                              frameborder="0" allowfullscreen ></iframe>
+ 
+                                           </div>
+                                <div class="vira-card-content">
+                                    <h3 class="my-2 ">Creative geeks</h3>
+                                    <div class="seprator2 my-3"></div>
+                                    <p>
+                                        Complimenten, bewonderend gefluit en lonkende blikken zijn enkele risico’s die The Garment Club met zichlaim meebrengt. Onze enige missiede
+                                    </p>
+                                </div>
+                            </div>
+                                       </div>
+
+                                         <div class="col-md-4">
+                                           <div class="vira-card">
+                                           <div class="vira-card-header my-3">
+                                                <iframe width="100%"height="100%" src="https://www.youtube.com/embed/VS6UOyTb5eU" 
+                                              frameborder="0" allowfullscreen ></iframe>
+                                           </div>
+                                <div class="vira-card-content">
+                                    <h3 class="my-2 ">Creative geeks</h3>
+                                    <div class="seprator2 my-3"></div>
+                                    <p>
+                                        Complimenten, bewonderend gefluit en lonkende blikken zijn enkele risico’s die The Garment Club met zichlaim meebrengt. Onze enige missiede
+                                    </p>
+                                </div>
+                            </div>
+                                       </div>
+
+                                         <div class="col-md-4">
+                                           <div class="vira-card">
+                                           <div class="vira-card-header my-3">
+                                                <iframe width="100%"height="100%" src="https://www.youtube.com/embed/VS6UOyTb5eU" 
+                                              frameborder="0" allowfullscreen ></iframe>
+                                           </div>
+                                <div class="vira-card-content">
+                                    <h3 class="my-2 ">Creative geeks</h3>
+                                    <div class="seprator2 my-3"></div>
+                                    <p>
+                                        Complimenten, bewonderend gefluit en lonkende blikken zijn enkele risico’s die The Garment Club met zichlaim meebrengt. Onze enige missiede
+                                    </p>
+                                </div>
+                            </div>
+                                       </div>
+
+                                         <div class="col-md-4">
+                                           <div class="vira-card">
+                                           <div class="vira-card-header my-3">
+                                                <iframe width="100%"height="100%" src="https://www.youtube.com/embed/VS6UOyTb5eU" 
+                                              frameborder="0" allowfullscreen ></iframe>
+                                           </div>
+                                <div class="vira-card-content">
+                                    <h3 class="my-2 ">Creative geeks</h3>
+                                    <div class="seprator2 my-3"></div>
+                                    <p>
+                                        Complimenten, bewonderend gefluit en lonkende blikken zijn enkele risico’s die The Garment Club met zichlaim meebrengt. Onze enige missiede
+                                    </p>
+                                </div>
+                            </div>
+                                       </div>
+
+                                         <div class="col-md-4">
+                                           <div class="vira-card">
+                                           <div class="vira-card-header my-3">
+                                                <iframe width="100%"height="100%" src="https://www.youtube.com/embed/VS6UOyTb5eU" 
+                                              frameborder="0" allowfullscreen ></iframe>
+                                           </div>
+                                <div class="vira-card-content">
+                                    <h3 class="my-2 ">Creative geeks</h3>
+                                    <div class="seprator2 my-3"></div>
+                                    <p>
+                                        Complimenten, bewonderend gefluit en lonkende blikken zijn enkele risico’s die The Garment Club met zichlaim meebrengt. Onze enige missiede
+                                    </p>
+                                </div>
+                            </div>
+                                       </div>
+
+                                         <div class="col-md-4">
+                                           <div class="vira-card">
+                                           <div class="vira-card-header my-3">
+                                                <iframe width="100%"height="100%" src="https://www.youtube.com/embed/VS6UOyTb5eU" 
+                                              frameborder="0" allowfullscreen ></iframe>
+                                           </div>
+                                <div class="vira-card-content">
+                                    <h3 class="my-2 ">Creative geeks</h3>
+                                    <div class="seprator2 my-3"></div>
+                                    <p>
+                                        Complimenten, bewonderend gefluit en lonkende blikken zijn enkele risico’s die The Garment Club met zichlaim meebrengt. Onze enige missiede
+                                    </p>
+                                </div>
+                            </div>
+                                       </div>
+
+                                     </div>
+                                   </div>
+                               </div>
+                           </section>
+
+                        <section class="my-3 text-center">
+                            <h1 class="mt-5">Gallery</h1><hr class="seprator1 my-4">
+                            <div class="row ">
+  
+
+                                <div class="col-md-4 mt-2 ">
+                                   <div class="dance_item_long">
+                                    <img class="img-fluid grayscale" src="https://i.pinimg.com/564x/a0/4d/bb/a04dbb123214fdabeb6c8411ab089918.jpg"></div>
+                                </div>
+                                <div class="col-md-8 ">
+                                    <div class="row">
+                                       <div class="col-md-6 mt-2 ">
+                                         <div class="dance_item">
+                                         <img class="img-fluid grayscale" src="https://i.pinimg.com/564x/43/0c/eb/430ceb52ff8356a84ca74124089f826f.jpg"></div>
+                                       </div>
+                                       <div class="col-md-6 mt-2 ">
+                                         <div class="dance_item">
+                                          <img class="img-fluid grayscale" src="https://i.pinimg.com/originals/b9/ca/ce/b9cace59b0b07a20d41a046e8426d2d9.gif"></div>
+                                       </div>
+
+                                        <div class="col-md-6 mt-2 ">
+                                           <div class="dance_item">
+                                         <img class="img-fluid grayscale" src="https://images.unsplash.com/flagged/photo-1561440064-26f554ab03a5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"></div>
+                                       </div>
+                                       <div class="col-md-6 mt-2 ">
+                                        <div class="dance_item">
+                                          <img class="img-fluid grayscale" src="https://images.unsplash.com/photo-1533106958148-daaeab8b83fe?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60">
+                                        </div>
+                                       </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+         <section class="mt-5 bg-dark text-white py-5">
+                            <div class="container text-center my-4 ">
+                              <div class="row">
+                                <div class="col-md-5">
+                                  <img class="img-fluid" src="https://images.unsplash.com/photo-1508700929628-666bc8bd84ea?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60">
+                                </div>
+                                <div class="col-md-7">
+                               <h3 style="color:#0CE3C2">About Academy</h3>
+                               <p class="mt-4">DANCING STAR ACADEMY was founded on 13th of feb 2019 by <strong class="font-italic text-warning">Rakhi Gupta </strong> with a belief
+                that every person can grow and gain the skills as a dancer.We constantly endeavour to provide a premier dance
+              education worthy of our eminent community status.</p>
+              <p class="mt-3 font-italic red-text">Our motto is "Your passion can be your career"</p>
+            </div>
+                            </div>
+                          </div>
+                        </section>
+                         <section class="mt-1 main2 py-4">
+            <div  class="container testimonal " >
+                <div class="row">
+                    <div class="col-12 text-center ">
+                         <h2 style="color:#0CE3C2" class="wow fadeInUp" data-wow-delay="0.3s">Reviews</h2>
+                         
+                    </div>
+                  </div>
+                    <div class="row text-center">
+                        <div class="col-md-12">
+                            <div id="testimonal" class="mt-4 ">
+                                <div class="item ">
+                                  <div class="testimonal-text">  
+                                    <p class="wow fadeInLeft" data-wow-delay="0.6s">
+                                   <img class="mx-4" src="image/quote-sign-left.png">
+                                   <span class="font-italic" >
+                                    I have have such a great time watching their practices and recitals for the last 6 months and counting,<br> Rakhi and her crew do such an amazing job and are so great with the kids.<br> They are very good at what they do! 
+                                  </span>
+                                    <img class="mx-4" src="image/quote-sign-right.png">
+                                    </p>
+                                  </div>
+                                  <h5 class="testimonal-heading wow fadeInDown">PRIYANKA </h5>
+                                  
+                                  <p>
+                                            <i class="fa fa-star orange-text"></i>
+                                            <i class="fa fa-star orange-text"></i>
+                                            <i class="fa fa-star orange-text"></i>
+                                            <i class="fa fa-star orange-text"></i>
+                                            <i class="fa fa-star orange-text"></i>
+                                  </p>
+                                </div>
+                                 <div class="item">
+                                    <div class="testimonal-text">
+                                    <p class="wow fadeInLeft" data-wow-delay="0.6s">
+                                   <img class="mx-4" src="image/quote-sign-left.png">
+                                   <span class="font-italic">
+                                    Dancing Star Academy allows young dancers to become well-trained in a variety of styles of dance.<br> Dancers are encouraged to express themselves and challenge themselves to <br>achieve new levels of technique.
+                                  </span>
+                                    <img class="mx-4" src="image/quote-sign-right.png">
+                                    </p>
+                                  </div>
+                                  <h5 class="testimonal-heading wow fadeInDown" data-wow-delay="0.3s">RAHUL THAKUR</h5>
+                                  
+                                   <p>
+                                            <i class="fa fa-star orange-text"></i>
+                                            <i class="fa fa-star orange-text"></i>
+                                            <i class="fa fa-star orange-text"></i>
+                                            <i class="fa fa-star orange-text"></i>
+                                            <i class="fa fa-star orange-text"></i>
+                                  </p>
+                                </div>
+                                 <div class="item">
+                                  <div class="testimonal-text">
+                                    <p class="wow fadeInLeft" data-wow-delay="0.6s">
+                                   <img class="mx-4" src="image/quote-sign-left.png">
+                                   <span class="font-italic">
+                                    Dancing Star Academy provided me with several dance techniques by offering many different types of instruction and classes. DSA offering these wide variety of classes are hard to come by,<br> DSA is really something special.
+                                  </span>
+                                    <img class="mx-4" src="image/quote-sign-right.png">
+                                    </p>
+                                  </div>
+                                   <h5  class="testimonal-heading wow fadeInDown " data-wow-delay="0.3s">ROHIT</h5>
+                                  
+                                
+                                   <p>
+                                            <i class="fa fa-star orange-text"></i>
+                                            <i class="fa fa-star orange-text"></i>
+                                            <i class="fa fa-star orange-text"></i>
+                                            <i class="fa fa-star orange-text"></i>
+                                            <i class="fa fa-star orange-text"></i>
+                                  </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+               
+            </div>
+        </section>
+
+                       
+                           </main>
+                     </div>
+                 </div>
+             </div>
+       
+            
+        </div>
+
+ <section class="social text-center my-4">
+      
+       <a href="#"> <i class="fab fa-facebook-f  fa-2x mx-3" ></i></a>
+        <a href="#"> <i class="fab fa-twitter  fa-2x mx-3" ></i></a>
+        <a  href="#"> <i class="fab fa-youtube  fa-2x mx-3"></i></a>
+       
+     
+    </section>
+     
+     <footer class="footer mt-4 py-3 text-white">
+          <div class="container">
+              <div class="row text-center">
+                  <div class="col-md-4">
+                    <p class="mt-3">Copy right 2016 by wow technology</p>
+                  </div>
+                   <div class="col-md-4  footer-logo">
+                     <img src="https://myrealdomain.com/images/just-dance-clipart-5.png" class="img-fluid ">
+                   </div>
+                    <div class="col-md-4">
+                      <p class="mt-3">Made with  by themewagon</p>
+                    </div>
+              </div>
+          </div>
+     </footer>
+
+        <!-- javascript project -->
+       
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.8/js/mdb.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+<script type="text/javascript">
+    new WOW().init();
+
+    $(".down_icon").on("click",function(event){
+      event.preventDefault();
+         $("body,html").animate({
+           scrollTop:400
+         },700);
+    });
+
+   $("#intro").scrollex({
+             mode: 'bottom',
+              top: '25vh',
+              bottom: '-50vh',
+             
+              enter: function() {
+                $(this).removeClass('hidden');
+              },
+              leave: function() {
+                $(this).addClass('hidden');
+              }
+   });
+
+</script>
+
+<script type="text/javascript">
+   $("#testimonal").owlCarousel({
+        navigation: false,
+        slideSpeed: 100,
+        pagination: true,
+        paginationSpeed: 100,
+        items: 1
+    });
+
+</script>
+
+    </body>
+</html>
